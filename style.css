@@ -1516,6 +1516,7 @@ body {
 .about-company {
     background: linear-gradient(to right, #0A1120, #162A44); /* Exact dark blue gradient */
     padding: 40px 20px;
+    position: relative;
 }
 
 .container {
