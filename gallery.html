@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Joseph Bird Netting</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div id="navbar"> 
+        <img id="logo" alt="nets logo" src="logo finalal.png" title="dspsafetynets">
+        <ul id="navlinks">
+            <li><a href="index.html" class="nav-links">Home</a></li>
+            <li><a href="safiety_nets.html"  class="nav-links">Safety Nets</a></li>
+            <li><a href="birds_pigeon.html"  class="nav-links">Bird & Pigeon Nets</a></li>
+            <li><a href="clothhangers.html"  class="nav-links">Cloth hangers</a></li>
+            <li><a href="invisiblegrills.html"  class="nav-links">Invisible grills</a></li>
+            <li><a href="sportsnets.html"  class="nav-links"> Sports Nets</a></li>
+            <li><a href="gallery.html"  class="nav-links">Gallery</a></li>
+            <li><a href="about.html"  class="nav-links">About Us</a></li>
+            
+        </ul>
+        <button class="mobile-toggle" id="hamburgerBtn">☰</button>
+        
+        
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="safiety_nets.html">Safety Nets</a>
+        <a href="birds_pigeon.html">Bird & Pigeon Nets</a>
+        <a href="clothhangers.html">Cloth Hangers</a>
+        <a href="invisiblegrills.html">Invisible Grills</a>
+        <a href="sportsnets.html">Sports Nets</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About Us</a>
+    </div>
+    <br>
+    <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            hamburgerBtn.classList.toggle('fa-solid');
+            hamburgerBtn.classList.toggle('fa-xmark');
+            if(hamburgerBtn.innerHTML!='') hamburgerBtn.innerHTML = '';
+            else hamburgerBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        });
+    </script>
+    <br>
+    <!-- Gallery Section -->
+    <header>
+        <h1>Gallery</h1>
+    </header>
+
+    <div class="gallery-container">
+        <!-- Row 1 -->
+        <div class="gallery-item"><img src="gallery1.jpg" alt="Image 1"></div>
+        <div class="gallery-item"><img src="gallery2.jpg" alt="Image 2"></div>
+        <div class="gallery-item"><img src="gallery3.jpg" alt="Image 3"></div>
+        <div class="gallery-item"><img src="gallery4.jpg" alt="Image 4"></div>
+        
+        <!-- Row 2 -->
+        <div class="gallery-item"><img src="gallery5.jpg" alt="Image 5"></div>
+        <div class="gallery-item"><img src="gallery6.jpg" alt="Image 6"></div>
+        <div class="gallery-item"><img src="gallery7.jpg" alt="Image 7"></div>
+        <div class="gallery-item"><img src="gallery8.jpg" alt="Image 8"></div>
+        
+        <!-- Row 3 -->
+        <div class="gallery-item"><img src="gallery9.jpg" alt="Image 9"></div>
+        <div class="gallery-item"><img src="gallery10.jpg" alt="Image 10"></div>
+        <div class="gallery-item"><img src="gallery11.jpg" alt="Image 11"></div>
+        <div class="gallery-item"><img src="gallery12.jpg" alt="Image 12"></div>
+
+        
+    </div>
+</body>
+</html>
