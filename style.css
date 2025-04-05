@@ -1714,6 +1714,11 @@ body {
     gap: 20px;
     align-items: flex-start;
 }
+@media (max-width: 850px) {
+    .content {
+        flex-direction: column;
+    }
+}
 
 /* Left Section */
 .left-section {
